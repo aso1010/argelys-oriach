@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mad Matter — Argelys Samuel Oriach</title>
+<meta name="description" content="Mad Matter: the artist statement and manifesto of Argelys Samuel Oriach, matter architect. The medium is matter. The method is madness: the refusal to let reality settle into predictable forms.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://argelysoriach.com/mad-matter/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/mad-matter/#page",
+      "url": "https://argelysoriach.com/mad-matter/",
+      "name": "Mad Matter",
+      "isPartOf": { "@id": "https://argelysoriach.com/#website" },
+      "mainEntity": { "@id": "https://argelysoriach.com/mad-matter/#work" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/mad-matter/#work",
+      "name": "Mad Matter",
+      "alternateName": "Artist statement and manifesto of a matter architect",
+      "url": "https://argelysoriach.com/mad-matter/",
+      "genre": ["Artist statement", "Manifesto"],
+      "abstract": "The medium is matter and the method is madness: the refusal to let reality settle into predictable forms. A body is not only biological. The statement names eight bodies, from a word to a celestial monolith.",
+      "keywords": ["Matter architect", "Matter", "Body", "Word", "Sentence", "Paragraph", "Literature", "Work", "Human", "Earth", "Celestial monolith"],
+      "author": { "@id": "https://argelysoriach.com/#person" },
+      "isPartOf": { "@id": "https://argelysoriach.com/#website" },
+      "dateCreated": "2026",
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<link rel="preload" href="../fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Italic-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+/* The full files. A browser fetches one only if a page uses a letter the small file does not carry. */
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+:root{
+  --ground:#000000;
+  --ink:#fff;
+  --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(1.3125rem,4vw,5.5625rem);
+  --rule:4px solid var(--ink);
+  /* Fibonacci steps, in rem: 8, 13, 21, 34, 55, 89 px */
+  --s1:.5rem;--s2:.8125rem;--s3:1.3125rem;--s4:2.125rem;--s5:3.4375rem;--s6:5.5625rem;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;background:var(--ground)}
+body{
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(1.125rem,.5vw + 1rem,1.375rem);
+  line-height:1.5;
+  font-variant-ligatures:none;
+  overflow-x:hidden;
+}
+a{color:var(--ink)}
+a:hover{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+::selection{background:var(--ink);color:var(--ground)}
+
+.label{
+  font-weight:800;
+  font-stretch:125%;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:clamp(.8125rem,.4vw + .6875rem,1rem);
+  line-height:1.3;
+}
+header,footer{
+  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--s1) var(--s3);
+  padding:.4375rem var(--gutter);
+}
+header{border-bottom:var(--rule)}
+footer{border-top:var(--rule)}
+header a,footer a{text-decoration:none;padding-block:var(--s2)}
+
+/* the title: two bodies of type, each fitted to the full width */
+h1{margin:0;padding:var(--s4) var(--gutter) var(--s3);border-bottom:var(--rule)}
+h1 svg{display:block;width:100%;height:auto;overflow:visible}
+h1 svg + svg{margin-top:var(--s1)}
+h1 text{
+  font-family:var(--sans);font-weight:900;font-stretch:125%;
+  font-variation-settings:'wdth' 125,'wght' 900;
+  letter-spacing:-.02em;fill:var(--ink);
+}
+.for{margin:0;padding:var(--s3) var(--gutter);border-bottom:var(--rule)}
+
+section{padding:clamp(var(--s4),4vw,var(--s5)) var(--gutter);border-bottom:var(--rule)}
+h2{margin:0 0 var(--s4)}
+
+/* statement */
+.statement{max-width:30em;font-size:clamp(1.3125rem,1.2vw + 1rem,2.125rem);line-height:1.3;font-weight:500}
+.statement p{margin:0}
+.statement p + p{margin-top:var(--s3)}
+.statement strong{font-weight:900}
+.lead{margin-bottom:var(--s3)}
+.close{font-size:clamp(1.5rem,2.6vw + 1rem,3.4375rem);line-height:1.1;max-width:20em}
+
+/* eight bodies: each rule is as long as its Fibonacci number, 1 1 2 3 5 8 13 21 */
+.bodies{list-style:none;margin:0;padding:0;counter-reset:b}
+.bodies li{counter-increment:b;padding:var(--s3) 0 0}
+.bodies li + li{margin-top:var(--s3)}
+.scale{display:block;height:4px;background:var(--ink);width:calc(var(--f) / 21 * 100%);min-width:var(--s1);margin-bottom:var(--s2)}
+.bodies .row{display:grid;grid-template-columns:2.5em minmax(0,1fr);gap:0 var(--s2);align-items:baseline}
+.bodies .row::before{content:counter(b,decimal-leading-zero);font-weight:800;font-stretch:125%;font-size:.75em;letter-spacing:.04em}
+.bodies h3{
+  margin:0;
+  font-weight:900;font-stretch:125%;font-variation-settings:'wdth' 125,'wght' 900;
+  text-transform:uppercase;letter-spacing:-.01em;line-height:1;
+  font-size:clamp(1.5rem,3.4vw,3.4375rem);
+}
+.bodies p{margin:var(--s1) 0 0;max-width:34em;grid-column:2}
+
+/* manifesto */
+.rules{list-style:none;margin:0;padding:0;counter-reset:r;max-width:44em}
+.rules li{
+  counter-increment:r;
+  display:grid;grid-template-columns:2.5em minmax(0,1fr);gap:0 var(--s2);align-items:baseline;
+  padding:var(--s3) 0;border-top:2px solid var(--ink);
+}
+.rules li:last-child{border-bottom:2px solid var(--ink)}
+.rules li::before{content:counter(r,decimal-leading-zero);font-weight:800;font-stretch:125%;font-size:.75em;letter-spacing:.04em}
+.rules strong{display:block;font-weight:900;font-size:clamp(1.3125rem,1.6vw + .875rem,2.125rem);line-height:1.15}
+.rules span{display:block;margin-top:var(--s1)}
+
+.sign{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3) var(--s4)}
+.sign svg{display:block;width:var(--s6);height:auto;flex:none}
+.sign p{margin:0}
+
+/* one list of pages, the same on every page */
+footer nav{display:flex;flex-wrap:wrap;gap:0 2.125rem}
+footer a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+footer{flex-direction:column;flex-wrap:nowrap;align-items:stretch;justify-content:flex-start;gap:0}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 2rem;margin-top:.4375rem;border-top:2px solid var(--ink)}
+.legal nav{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 2.125rem}
+.legal p,.legal span{margin:0;padding-block:.8125rem}
+</style>
+</head>
+<body>
+<header class="label">
+  <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a>
+  <a href="https://argelysoriach.com/portfolio/">Portfolio</a>
+</header>
+
+<h1 aria-label="Mad Matter">
+  <svg viewBox="0 0 4000 672" aria-hidden="true" focusable="false"><text x="0" y="664" textLength="4000" lengthAdjust="spacingAndGlyphs" font-size="900">MAD</text></svg>
+  <svg viewBox="0 0 4000 672" aria-hidden="true" focusable="false"><text x="0" y="664" textLength="4000" lengthAdjust="spacingAndGlyphs" font-size="900">MATTER</text></svg>
+</h1>
+<p class="for label">Artist statement and manifesto of a matter architect</p>
+
+<section>
+  <h2 class="label">Statement</h2>
+  <div class="statement">
+    <p><strong>I am a matter architect. An architect of the volatile.</strong></p>
+    <p>I do not paint, write or sculpt. I work the raw fabric: mass, scale, syntax.</p>
+    <p>My medium is Matter. My method is Madness: the refusal to let reality settle into predictable forms.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="label">Body</h2>
+  <div class="statement lead"><p>A body is not only biological.</p></div>
+  <ol class="bodies">
+    <li style="--f:1">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A word</h3><p>Unyielding. The smallest body I build with.</p></div>
+    </li>
+    <li style="--f:1">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A sentence</h3><p>Sudden. It arrives whole.</p></div>
+    </li>
+    <li style="--f:2">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A paragraph</h3><p>Volatile. Sentences under pressure in one room.</p></div>
+    </li>
+    <li style="--f:3">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A literature</h3><p>A dense collection of text. Mass made of pages.</p></div>
+    </li>
+    <li style="--f:5">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A work</h3><p>What a body builds and leaves standing.</p></div>
+    </li>
+    <li style="--f:8">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A human</h3><p>The biological body. It carries all the others. It needs rest.</p></div>
+    </li>
+    <li style="--f:13">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>The Earth</h3><p>A vast landscape. Ground that shifts.</p></div>
+    </li>
+    <li style="--f:21">
+      <span class="scale" aria-hidden="true"></span>
+      <div class="row"><h3>A celestial monolith</h3><p>The crushing weight. The largest body I can name.</p></div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2 class="label">Material</h2>
+  <div class="statement">
+    <p><strong>Everything is material.</strong></p>
+    <p>A syllable has density.<br>A void has gravity.<br>A blank space is a room waiting to collapse or expand.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="label">Method</h2>
+  <ol class="rules">
+    <li><div><strong>I take down the wall between the small and the vast.</strong></div></li>
+    <li><div><strong>I give one word the reverence of a monument.</strong></div></li>
+    <li><div><strong>I carve away until only the heavy core remains.</strong></div></li>
+    <li><div><strong>I let elements collide.</strong></div></li>
+    <li><div><strong>I let syntax bend.</strong></div></li>
+    <li><div><strong>I let structure find its own equilibrium.</strong></div></li>
+  </ol>
+</section>
+
+<section>
+  <div class="statement close">
+    <p>I do not build clean frameworks to contain the world.</p>
+    <p><strong>I architect the spaces where the world breaks open.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="sign">
+    <svg viewBox="184 204 432 452" role="img" aria-label="Emblem">
+      <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke-width="52" d="M210 230 L400 630 L590 230"/>
+        <path stroke-width="36" d="M270 420 L530 440"/>
+      </g>
+    </svg>
+    <p class="label">Argelys Samuel Oriach<br>Matter architect<br>New York, 2026</p>
+  </div>
+</section>
+
+<footer class="label"><nav aria-label="Pages"><a href="https://argelysoriach.com/">Home</a><a href="https://argelysoriach.com/portfolio/">Portfolio</a><a href="https://argelysoriach.com/cv/">CV</a><a href="https://argelysoriach.com/universe-api/">Universe API</a><a href="https://argelysoriach.com/sovereignty/">Sovereignty</a><a href="https://argelysoriach.com/mad-matter/" aria-current="page">Mad Matter</a><a href="https://argelysoriach.com/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a><a href="https://argelysoriach.com/community-presentation/">Community Presentation</a><a href="https://argelysoriach.com/schema/">Schema</a></nav><div class="legal"><nav aria-label="About this site"><a href="https://argelysoriach.com/#position">About</a><a href="mailto:argelys@seveneightythree.com">Contact</a><a href="https://argelysoriach.com/privacy/">Privacy</a><a href="https://argelysoriach.com/terms/">Terms</a><span>Brooklyn, New York</span></nav><p>© 2026 Argelys Samuel Oriach · Seven Eighty Three</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Universe API — Argelys Samuel Oriach</title>
+<meta name="description" content="The Universe API is a foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://argelysoriach.com/universe-api/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://argelysoriach.com/universe-api/#page",
+      "url": "https://argelysoriach.com/universe-api/",
+      "name": "Universe API",
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://argelysoriach.com/universe-api/#framework"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/universe-api/#framework",
+      "name": "Universe API",
+      "url": "https://argelysoriach.com/universe-api/",
+      "description": "A foundational macro-systems design framework grounded in first-principles engineering and sovereign logic.",
+      "abstract": "The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.",
+      "keywords": [
+        "Closed-loop systems",
+        "Sovereign logic",
+        "Asset-based leverage",
+        "First-principles engineering",
+        "Organic/unforced biological growth",
+        "Infrastructure designed to compound rather than extract"
+      ],
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "isPartOf": {
+        "@id": "https://argelysoriach.com/#website"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<link rel="preload" href="../fonts/Archivo-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo VF';src:url('../fonts/Archivo-Italic-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+/* The full files. A browser fetches one only if a page uses a letter the small file does not carry. */
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo Full';src:url('../fonts/Archivo-Italic-Variable.ttf') format('truetype');font-weight:100 900;font-stretch:62% 125%;font-style:italic;font-display:swap}
+:root{
+  --ground:#000000;
+  --ink:#fff;
+  --sans:'Archivo VF','Archivo Full',"Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(1.3125rem,4vw,5.5625rem);
+  --rule:4px solid var(--ink);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:dark;-webkit-text-size-adjust:100%}
+html,body{margin:0;padding:0;background:var(--ground)}
+body{
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:clamp(1.125rem,.5vw + 1rem,1.375rem);
+  line-height:1.5;
+  font-variant-ligatures:none;
+  overflow-x:hidden;
+}
+a{color:var(--ink)}
+a:hover{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+::selection{background:var(--ink);color:var(--ground)}
+
+.label{
+  font-weight:800;
+  font-stretch:125%;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:clamp(.8125rem,.4vw + .6875rem,1rem);
+  line-height:1.3;
+}
+header,footer{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;
+  padding:.4375rem var(--gutter);
+}
+header{border-bottom:var(--rule)}
+footer{border-top:var(--rule)}
+header a,footer a{text-decoration:none;padding-block:.8125rem}
+
+h1{
+  margin:0;
+  padding:clamp(2rem,6vw,5.5rem) var(--gutter);
+  border-bottom:var(--rule);
+  font-weight:900;
+  font-stretch:125%;
+  text-transform:uppercase;
+  font-size:clamp(1.75rem,9.6vw,11rem);
+  line-height:.88;
+  letter-spacing:-.03em;
+  overflow-wrap:anywhere;
+}
+.for{
+  margin:0;
+  padding:1.25rem var(--gutter);
+  border-bottom:var(--rule);
+}
+
+section{
+  padding:clamp(1.75rem,4vw,3.5rem) var(--gutter);
+  border-bottom:var(--rule);
+}
+h2{margin:0 0 1.5em}
+.prose{margin:0;max-width:36em}
+a.text{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+a.text:hover{text-decoration:none}
+.base{list-style:none;margin:0;padding:0;max-width:36em;counter-reset:b}
+.base li{
+  counter-increment:b;
+  display:flex;gap:1.25em;align-items:baseline;
+  padding:.75em 0;
+  border-top:2px solid var(--ink);
+  font-weight:700;
+}
+.base li:last-child{border-bottom:2px solid var(--ink)}
+.base li::before{
+  content:counter(b,decimal-leading-zero);
+  flex:none;
+  font-weight:800;font-stretch:125%;letter-spacing:.04em;
+  font-size:.8em;
+}
+
+/* one list of pages, the same on every page */
+footer nav{display:flex;flex-wrap:wrap;gap:0 2.125rem}
+footer a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+footer{flex-direction:column;flex-wrap:nowrap;align-items:stretch;justify-content:flex-start;gap:0}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 2rem;margin-top:.4375rem;border-top:2px solid var(--ink)}
+.legal nav{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 2.125rem}
+.legal p,.legal span{margin:0;padding-block:.8125rem}
+
+/* spirit and engineering */
+.spirit p{margin:0}
+.spirit p + p{margin-top:1.3125rem}
+.spirit strong{font-weight:900}
+</style>
+</head>
+<body>
+<header class="label">
+  <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a>
+  <a href="https://argelysoriach.com/portfolio/">Portfolio</a>
+</header>
+
+<h1>Universe API</h1>
+<p class="for label">Macro-systems design framework</p>
+
+<section>
+  <h2 class="label">Definition</h2>
+  <p class="prose">The Universe API is a foundational macro-systems design framework grounded in first-principles engineering and sovereign logic. It is the central deployment of <a class="text" href="https://argelysoriach.com/">Argelys Samuel Oriach</a>, Macro-Systems Architect and Principal at <a class="text" href="https://seveneightythree.com/">Seven Eighty Three</a> (783). It is applied through <a class="text" href="https://communalfoundation.org/">Communal Foundation</a>, his consultancy.</p>
+</section>
+
+<section>
+  <h2 class="label">Operating Philosophy</h2>
+  <p class="prose">The operating philosophy centers on re-architecting digital infrastructure from the mulch up: replacing synthetic friction with closed-loop systems, asset-based leverage, and forms of growth that emerge organically rather than through extractive mechanisms.</p>
+</section>
+
+<section>
+  <h2 class="label">Spirit and engineering</h2>
+  <div class="prose spirit">
+    <p><strong>Both is the only way it holds.</strong></p>
+    <p>Engineering without spirit is synthetic friction: it looks efficient, but it extracts.</p>
+    <p>Spirit without engineering is performance without structure: it feels true, but it collapses under load.</p>
+    <p>Together:</p>
+    <p><strong>Engineering makes the spirit legible.</strong><br>First-principles, closed-loop, asset-based leverage: that’s how you make sure the feeling can actually travel from your body to the back wall.</p>
+    <p><strong>Spirit makes the engineering worth holding.</strong><br>Sovereign logic, organic growth, matter as matter: that’s why you build it at all. Not to extract, but to compound.</p>
+    <p>That’s the <a class="text" href="https://argelysoriach.com/sovereignty/">Nothing Artist</a>. A body and matter architect. The body is the spirit. The matter is the engineering.</p>
+    <p><strong>Same sentence.</strong></p>
+  </div>
+</section>
+
+<section>
+  <h2 class="label">Baseline</h2>
+  <ol class="base">
+    <li>Closed-loop systems</li>
+    <li>Sovereign logic</li>
+    <li>Asset-based leverage</li>
+    <li>First-principles engineering</li>
+    <li>Organic/unforced biological growth</li>
+    <li>Infrastructure designed to compound rather than extract</li>
+  </ol>
+</section>
+
+<footer class="label"><nav aria-label="Pages"><a href="https://argelysoriach.com/">Home</a><a href="https://argelysoriach.com/portfolio/">Portfolio</a><a href="https://argelysoriach.com/cv/">CV</a><a href="https://argelysoriach.com/universe-api/" aria-current="page">Universe API</a><a href="https://argelysoriach.com/sovereignty/">Sovereignty</a><a href="https://argelysoriach.com/mad-matter/">Mad Matter</a><a href="https://argelysoriach.com/this-is-not-a-love-story-yankees/">This Is Not a Love Story (Yankees)</a><a href="https://argelysoriach.com/community-presentation/">Community Presentation</a><a href="https://argelysoriach.com/schema/">Schema</a></nav><div class="legal"><nav aria-label="About this site"><a href="https://argelysoriach.com/#position">About</a><a href="mailto:argelys@seveneightythree.com">Contact</a><a href="https://argelysoriach.com/privacy/">Privacy</a><a href="https://argelysoriach.com/terms/">Terms</a><span>Brooklyn, New York</span></nav><p>© 2026 Argelys Samuel Oriach · Seven Eighty Three</p></div></footer>
+</body>
+</html>

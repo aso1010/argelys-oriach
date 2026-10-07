@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://seveneightythree.com/#organization",
+      "name": "Seven Eighty Three",
+      "alternateName": "783",
+      "url": "https://seveneightythree.com/",
+      "description": "Independent systems design laboratory.",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://wild-lake.org/#organization",
+      "name": "Wild-Lake",
+      "url": "https://wild-lake.org/",
+      "description": "Existential mechanics studio and A&R venture.",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://communalfoundation.org/#organization",
+      "name": "Communal Foundation",
+      "url": "https://communalfoundation.org/",
+      "description": "Consultancy. The structure through which the Universe API and the Food API are applied.",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    }
+  ]
+}

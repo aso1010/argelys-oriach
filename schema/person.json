@@ -1,0 +1,70 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://argelysoriach.com/#person",
+  "name": "Argelys Samuel Oriach",
+  "alternateName": "Argelys Oriach",
+  "givenName": "Argelys",
+  "additionalName": "Samuel",
+  "familyName": "Oriach",
+  "url": "https://argelysoriach.com/",
+  "email": "argelys@seveneightythree.com",
+  "jobTitle": [
+    "Nothing Artist",
+    "Body & Matter Architect",
+    "Macro-Systems Architect"
+  ],
+  "description": "Argelys Samuel Oriach is a global macro-systems architect, engineer, writer, artist, activist, and actor with over a dozen years of corporate experience. He is the Nothing Artist and a body and matter architect. He is Founder and Principal Systems Architect of Seven Eighty Three (783), an independent systems design laboratory, Founding Executive Director of Communal Foundation, and Chief Executive Officer of Wild-Lake.",
+  "birthDate": "1993-08-29T15:45:00-04:00",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Santiago de los Caballeros, Dominican Republic"
+  },
+  "worksFor": [
+    {
+      "@id": "https://seveneightythree.com/#organization"
+    },
+    {
+      "@id": "https://wild-lake.org/#organization"
+    },
+    {
+      "@id": "https://communalfoundation.org/#organization"
+    }
+  ],
+  "@reverse": {
+    "founder": [
+      {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      {
+        "@id": "https://wild-lake.org/#organization"
+      },
+      {
+        "@id": "https://communalfoundation.org/#organization"
+      }
+    ]
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Wesleyan University"
+    },
+    {
+      "@type": "HighSchool",
+      "name": "Phillips Academy Andover"
+    }
+  ],
+  "knowsAbout": [
+    "Content strategy",
+    "Organic growth",
+    "Artist development",
+    "Poetry"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/argelys-samuel-oriach/",
+    "https://paragraph.com/@seven83hertz"
+  ],
+  "mainEntityOfPage": {
+    "@id": "https://argelysoriach.com/#home"
+  }
+}
